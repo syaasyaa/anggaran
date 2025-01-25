@@ -15,6 +15,8 @@ class Anggaran extends Model
         'kegiatan',
         'biaya',
         'tanggal_kegiatan',
+        'foto',
+        'keterangan',
     ];
 
     public function user()

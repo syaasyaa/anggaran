@@ -20,6 +20,8 @@ return new class extends Migration
             $table->string('kegiatan');
             $table->double('biaya');
             $table->date('tanggal_kegiatan');
+            $table->string('foto')->nullable()->after('tanggal_kegiatan');
+            $table->text('keterangan')->nullable()->after('foto');
             $table->timestamps();
         });
     }

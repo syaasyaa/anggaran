@@ -4,6 +4,7 @@ use App\Http\Controllers\DashboardController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\AnggaranController;
+use App\Http\Controllers\LaporanAnggaranController;
 use App\Http\Controllers\LoginController;
 
 
@@ -28,3 +29,4 @@ Route::post('logout',[LoginController::class,'logout'])->middleware('auth');
 Route::get('/',[DashboardController::class, 'index'])->name('dashboard')->middleware('auth');
 Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard')->middleware('auth');
 Route::get('/anggaran', [AnggaranController::class, 'index'])->name('anggaran.index');
+Route::get('/laporan-anggaran', [LaporanAnggaranController::class, 'generateReport'])->name('laporan.anggaran');

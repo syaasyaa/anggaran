@@ -128,6 +128,14 @@
                                 </p>
                             </a>
                         </li>
+                        <li class="nav-item">
+                            <a href="{{route('laporan.anggaran')}}" class="nav-link {{ ($title==='laporan')?'active':''}}">
+                                <i class="nav-icon fas fa-users"></i>
+                                <p>
+                                    laporan
+                                </p>
+                            </a>
+                        </li>
                        
                     </ul>
                 </nav>
